@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"04_timer500ms\startup_stm32f103xb.o"
+"04_timer500ms\main.o"
+"04_timer500ms\stm32f1xx_it.o"
+"04_timer500ms\stm32f1xx_hal_msp.o"
+"04_timer500ms\stm32f1xx_hal_gpio_ex.o"
+"04_timer500ms\stm32f1xx_hal_tim.o"
+"04_timer500ms\stm32f1xx_hal_tim_ex.o"
+"04_timer500ms\stm32f1xx_hal.o"
+"04_timer500ms\stm32f1xx_hal_rcc.o"
+"04_timer500ms\stm32f1xx_hal_rcc_ex.o"
+"04_timer500ms\stm32f1xx_hal_gpio.o"
+"04_timer500ms\stm32f1xx_hal_dma.o"
+"04_timer500ms\stm32f1xx_hal_cortex.o"
+"04_timer500ms\stm32f1xx_hal_pwr.o"
+"04_timer500ms\stm32f1xx_hal_flash.o"
+"04_timer500ms\stm32f1xx_hal_flash_ex.o"
+"04_timer500ms\stm32f1xx_hal_exti.o"
+"04_timer500ms\system_stm32f1xx.o"
+--strict --scatter "04_Timer500ms\04_Timer500ms.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "04_Timer500ms.map" -o 04_Timer500ms\04_Timer500ms.axf

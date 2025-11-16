@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"06_adc\startup_stm32f103xb.o"
+"06_adc\main.o"
+"06_adc\stm32f1xx_it.o"
+"06_adc\stm32f1xx_hal_msp.o"
+"06_adc\stm32f1xx_hal_gpio_ex.o"
+"06_adc\stm32f1xx_hal_adc.o"
+"06_adc\stm32f1xx_hal_adc_ex.o"
+"06_adc\stm32f1xx_hal.o"
+"06_adc\stm32f1xx_hal_rcc.o"
+"06_adc\stm32f1xx_hal_rcc_ex.o"
+"06_adc\stm32f1xx_hal_gpio.o"
+"06_adc\stm32f1xx_hal_dma.o"
+"06_adc\stm32f1xx_hal_cortex.o"
+"06_adc\stm32f1xx_hal_pwr.o"
+"06_adc\stm32f1xx_hal_flash.o"
+"06_adc\stm32f1xx_hal_flash_ex.o"
+"06_adc\stm32f1xx_hal_exti.o"
+"06_adc\system_stm32f1xx.o"
+--strict --scatter "06_ADC\06_ADC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "06_ADC.map" -o 06_ADC\06_ADC.axf

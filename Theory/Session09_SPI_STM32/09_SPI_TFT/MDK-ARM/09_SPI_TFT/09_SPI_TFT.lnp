@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"09_spi_tft\startup_stm32f103xb.o"
+"09_spi_tft\main.o"
+"09_spi_tft\stm32f1xx_it.o"
+"09_spi_tft\stm32f1xx_hal_msp.o"
+"09_spi_tft\stm32f1xx_hal_gpio_ex.o"
+"09_spi_tft\stm32f1xx_hal_spi.o"
+"09_spi_tft\stm32f1xx_hal.o"
+"09_spi_tft\stm32f1xx_hal_rcc.o"
+"09_spi_tft\stm32f1xx_hal_rcc_ex.o"
+"09_spi_tft\stm32f1xx_hal_gpio.o"
+"09_spi_tft\stm32f1xx_hal_dma.o"
+"09_spi_tft\stm32f1xx_hal_cortex.o"
+"09_spi_tft\stm32f1xx_hal_pwr.o"
+"09_spi_tft\stm32f1xx_hal_flash.o"
+"09_spi_tft\stm32f1xx_hal_flash_ex.o"
+"09_spi_tft\stm32f1xx_hal_exti.o"
+"09_spi_tft\system_stm32f1xx.o"
+--strict --scatter "09_SPI_TFT\09_SPI_TFT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "09_SPI_TFT.map" -o 09_SPI_TFT\09_SPI_TFT.axf
