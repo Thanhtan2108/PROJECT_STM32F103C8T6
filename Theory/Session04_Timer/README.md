@@ -87,4 +87,42 @@
 
 ### [XEM VIDEO](https://www.youtube.com/watch?v=spyKGp61ySs&list=PLbQ6BBf-QSJyMTHJihioiEOWs-FG2YxXa&index=12)
 
+- Dùng Timer thường chứ không dùng ngắt Timer
+
+- Để kích hoạt bắt đầu dùng Timer thường
+
+```c
+HAL_TIM_Base_Start(&htim2);
+```
+
+- Để chỉ định giá trị Reset counter cho thanh ghi CNT, có thể truy cập trực tiếp bằng cách dùng đối tượng Instance và trỏ đến thanh ghi CNT và gán giá trị cho nó
+
+```c
+htim2.Instance->CNT = 0;
+```
+
+- Nó tương đương với
+
+```c
+__HAL_TIM_SET_COUNTER(&htim2, 0);
+```
+
+- Để đọc giá trị trong thanh ghi CNT, có thể truy cập trực tiếp bằng cách dùng đối tượng Instance và trỏ đến thanh ghi CNT và đọc giá trị của nó, lưu vào 1 biến hoặc không cần
+
+```c
+uint16_t count = htim2.Instance->CNT;
+```
+
+- Nó tương đương với
+
+```c
+uint16_t count = __HAL_TIM_GET_COUNTER(&htim2);
+```
+
+- Để dừng việc dùng Timer thường
+
+```c
+HAL_TIM_Base_Stop(&htim2);
+```
+
 ## [XEM CODE](./04_Timer500ms/Core/Src/main.c)
