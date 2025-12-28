@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"02_led7segment\startup_stm32f103xb.o"
+"02_led7segment\main.o"
+"02_led7segment\stm32f1xx_it.o"
+"02_led7segment\stm32f1xx_hal_msp.o"
+"02_led7segment\stm32f1xx_hal_gpio_ex.o"
+"02_led7segment\stm32f1xx_hal.o"
+"02_led7segment\stm32f1xx_hal_rcc.o"
+"02_led7segment\stm32f1xx_hal_rcc_ex.o"
+"02_led7segment\stm32f1xx_hal_gpio.o"
+"02_led7segment\stm32f1xx_hal_dma.o"
+"02_led7segment\stm32f1xx_hal_cortex.o"
+"02_led7segment\stm32f1xx_hal_pwr.o"
+"02_led7segment\stm32f1xx_hal_flash.o"
+"02_led7segment\stm32f1xx_hal_flash_ex.o"
+"02_led7segment\stm32f1xx_hal_exti.o"
+"02_led7segment\system_stm32f1xx.o"
+"02_led7segment\led7segment.o"
+--strict --scatter "02_Led7Segment\02_Led7Segment.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "02_Led7Segment.map" -o 02_Led7Segment\02_Led7Segment.axf
