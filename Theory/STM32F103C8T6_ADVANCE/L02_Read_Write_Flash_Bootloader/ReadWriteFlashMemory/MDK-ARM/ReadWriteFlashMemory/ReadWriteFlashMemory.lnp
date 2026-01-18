@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"readwriteflashmemory\startup_stm32f103xb.o"
+"readwriteflashmemory\main.o"
+"readwriteflashmemory\stm32f1xx_it.o"
+"readwriteflashmemory\stm32f1xx_hal_msp.o"
+"readwriteflashmemory\stm32f1xx_hal_gpio_ex.o"
+"readwriteflashmemory\stm32f1xx_hal.o"
+"readwriteflashmemory\stm32f1xx_hal_rcc.o"
+"readwriteflashmemory\stm32f1xx_hal_rcc_ex.o"
+"readwriteflashmemory\stm32f1xx_hal_gpio.o"
+"readwriteflashmemory\stm32f1xx_hal_dma.o"
+"readwriteflashmemory\stm32f1xx_hal_cortex.o"
+"readwriteflashmemory\stm32f1xx_hal_pwr.o"
+"readwriteflashmemory\stm32f1xx_hal_flash.o"
+"readwriteflashmemory\stm32f1xx_hal_flash_ex.o"
+"readwriteflashmemory\stm32f1xx_hal_exti.o"
+"readwriteflashmemory\system_stm32f1xx.o"
+"readwriteflashmemory\flash.o"
+--strict --scatter "ReadWriteFlashMemory\ReadWriteFlashMemory.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ReadWriteFlashMemory.map" -o ReadWriteFlashMemory\ReadWriteFlashMemory.axf
