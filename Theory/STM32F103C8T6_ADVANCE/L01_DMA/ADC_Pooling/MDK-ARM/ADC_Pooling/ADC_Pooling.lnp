@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"adc_pooling\startup_stm32f103xb.o"
+"adc_pooling\main.o"
+"adc_pooling\stm32f1xx_it.o"
+"adc_pooling\stm32f1xx_hal_msp.o"
+"adc_pooling\stm32f1xx_hal_gpio_ex.o"
+"adc_pooling\stm32f1xx_hal_adc.o"
+"adc_pooling\stm32f1xx_hal_adc_ex.o"
+"adc_pooling\stm32f1xx_hal.o"
+"adc_pooling\stm32f1xx_hal_rcc.o"
+"adc_pooling\stm32f1xx_hal_rcc_ex.o"
+"adc_pooling\stm32f1xx_hal_gpio.o"
+"adc_pooling\stm32f1xx_hal_dma.o"
+"adc_pooling\stm32f1xx_hal_cortex.o"
+"adc_pooling\stm32f1xx_hal_pwr.o"
+"adc_pooling\stm32f1xx_hal_flash.o"
+"adc_pooling\stm32f1xx_hal_flash_ex.o"
+"adc_pooling\stm32f1xx_hal_exti.o"
+"adc_pooling\system_stm32f1xx.o"
+--strict --scatter "ADC_Pooling\ADC_Pooling.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ADC_Pooling.map" -o ADC_Pooling\ADC_Pooling.axf
