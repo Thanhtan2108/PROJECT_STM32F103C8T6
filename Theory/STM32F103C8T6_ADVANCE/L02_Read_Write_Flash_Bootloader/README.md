@@ -1,5 +1,7 @@
 # FLASH MEMORY, ĐỌC - GHI FLASH, BOOTLOADER
 
+[XEM VIDEO](https://www.youtube.com/watch?v=QWFWmpi1US4&list=PLbQ6BBf-QSJxbv84cOCSV0LO3riGbzJfk&index=3)
+
 ## 1. Memory trong STM32F1
 
 ![memory](./image/memory.png)
