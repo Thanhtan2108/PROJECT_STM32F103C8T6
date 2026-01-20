@@ -87,10 +87,10 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-  // set address flash for code Application
-  SCB->VTOR = 0x0800C800;
-  /* USER CODE END 2 */
 
+  /* USER CODE END 2 */
+	SCB->VTOR = 0x800C800;
+	
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)

@@ -54,7 +54,7 @@ static void MX_GPIO_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-#define ADDR_APP_PROGRAM 0x08000000
+#define ADDR_APP_PROGRAM 0x0800C800
 
 typedef void (*pFunction)();
 
@@ -65,7 +65,7 @@ void enter_to_application() {
 
   // Tắt các ngắt lỗi
   SCB->SHCSR &= ~(SCB_SHCSR_MEMFAULTENA_Msk | SCB_SHCSR_BUSFAULTENA_Msk | SCB_SHCSR_USGFAULTENA_Msk);
-
+	
   // Set lại MSP
   __set_MSP(*(__IO uint32_t*) ADDR_APP_PROGRAM);
 

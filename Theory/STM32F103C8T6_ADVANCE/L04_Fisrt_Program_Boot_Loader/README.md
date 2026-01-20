@@ -43,3 +43,13 @@
 - Với code Bootloader thì cứ nhạp bình thường, code sẽ được nạp vào địa chỉ 0x08000000
 
 - Với code Application thì nạp có chỉ định địa chỉ trong Target for option để chỉ định địa chỉ flash lưu code.
+
+## 5. Wiring
+
+| BUTTON | LED | MCU | VCC |
+| --- | --- | --- | --- |
+| 1 chân (+) | - | PA1 | - |
+| 1 chân (+) | - | - | R10K -> VCC |
+| 1 chân (-) | - | GND | - |
+| - | Anode | R330 -> PA0 | - |
+| - | Cathode | GND | - |
