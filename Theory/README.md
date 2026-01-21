@@ -16,6 +16,8 @@ Trước tiên, cần biết rõ vi điều khiển mình đang học:
 
 - Clock: Tối đa 72 MHz.
 
+[Pinout STM32F103C8T6](./pinout.png)
+
 ## Bước 2: Tải Tài Liệu Chính Thức từ ST
 
 Tất cả tài liệu dưới đây đều có sẵn trên trang chủ của ST. Có thể tìm kiếm bằng mã sản phẩm `STM32F103C8T6` hoặc `STM32F103x8/B`.
