@@ -55,7 +55,7 @@ void led7Segment_Init(led7Segment_Object_t *hLed,
                     led7Segment_GPIO_t segment_e,
                     led7Segment_GPIO_t segment_f,
                     led7Segment_GPIO_t segment_g,
-                    led7Segment_Type_t );
+                    led7Segment_Type_t type);
 
 /*
 Xây dựng hàm Handler để xử lý 1 task cụ thể của đối tượng 
