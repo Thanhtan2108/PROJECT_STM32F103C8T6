@@ -95,7 +95,7 @@ HAl_GPIO_WritePin(GPIO_PORT, GPIO_PIN_NUMBER, LEVEL);
 
   - LEVEL : 0/1 tương ứng xuất mức LOW/HIGH
 
-### Để khai báo, chỉ định mức LOGIC mặc định ban đầu của chân GPIO, ngôaif việc dùng `HAL_GPIO_WritePin();` sau đó chỉ định mức LOGIC là 0/1 (LOW/HIGH), có thể thay bằng
+### Để khai báo, chỉ định mức LOGIC mặc định ban đầu của chân GPIO, ngoài việc dùng `HAL_GPIO_WritePin();` sau đó chỉ định mức LOGIC là 0/1 (LOW/HIGH), có thể thay bằng
 
 - Cú pháp:
 
