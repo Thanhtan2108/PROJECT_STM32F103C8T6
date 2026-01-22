@@ -26,7 +26,7 @@
 
   - Counter Register (`TIMx_CNT`) : lưu giá trị đếm
 
-  - Prescater Register (`TIMx_PSC`) : Lưu giá trị chia từ tần số cơ sở cấp cho Timer đẻ tạo ra tần số thích hợp
+  - Prescater Register (`TIMx_PSC`) : Lưu giá trị chia từ tần số cơ sở cấp cho Timer để tạo ra tần số thích hợp, giúp tính được `t` bằng bao nhiêu.
 
   - Auto-Reload Registor (`TIMx_ARR`) : lưu giá trị đích đếm lên hoặc đếm xuống
 
@@ -34,9 +34,9 @@
 
 - Cách Setup
 
-  - Để đưa tần số đếm về 1KHz, chọn PSC bằng 63999
+  - Để đưa tần số đếm về 1KHz, chọn `PSC` bằng `63999`
 
-  - Sau đó tính t = 1ms => sau 1ms thanh ghi CNT sẽ tăng 1 đơn vị
+  - Sau đó tính `t = 1ms` => sau 1ms thanh ghi CNT sẽ tăng 1 đơn vị
 
 ![Setup Timer](./image/setupTimer.png)
 
@@ -54,7 +54,7 @@
 
     - Khi truyền thì truyền tham chiếu vì cần truyền con trỏ
   
-  - Sau khi timer chạy, thanh ghi CNT == thanh ghi ARR thì gọi đến hàm xử lý ngắt `void TIM1_UP_IRQHandler(void)` trong file `./04_Timer500ms/Core/Src/stm32f1xx_it.c`
+  - Sau khi timer chạy, thanh ghi `CNT` == thanh ghi `ARR` thì gọi đến hàm xử lý ngắt `void TIM1_UP_IRQHandler(void)` trong file `./04_Timer500ms/Core/Src/stm32f1xx_it.c`
 
   - Trong hàm này gọi hàm ngắt `HAL_TIM_IRQHandler(&htim1);`
   
@@ -75,9 +75,9 @@
 
 - Xây dựng hàm Delay_us
 
-  - Cần set PSC là 63 => t = 1us.
+  - Cần set `PSC` là `63` => `t = 1us`.
 
-  - Không cần set giá trị cho thanh ghi ARR vì không cần dùng ngắt timer
+  - Không cần set giá trị cho thanh ghi `ARR` vì không cần dùng ngắt timer
 
 - Xây dựng hàm Delay_ms
 
