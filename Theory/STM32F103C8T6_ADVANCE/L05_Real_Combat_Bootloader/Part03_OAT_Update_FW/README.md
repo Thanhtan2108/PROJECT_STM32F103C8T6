@@ -14,4 +14,13 @@ Nhiễu trên dây RX TX
 
 Dùng chung 1 mức điện áp giữa 2 MCU để giao tiếp UART thành công
 
+## Wiring
+
+| ESP32 | STM32 |
+| --- | --- |
+| RX2(GPIO16) | PA9(UART1) |
+| TX2(GPIO17) | PA10(UART1) |
+| GND | GND |
+| 3.3V | 3.3V |
+
 > Lưu ý: mức điện áp dùng chung VCC phải bằng mức điện áp trên dây RX TX
