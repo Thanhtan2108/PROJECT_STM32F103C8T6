@@ -42,13 +42,13 @@
 
   - Thanh ghi CCR là Ton
 
-  - Thanh ghi ARR là Tpwm
+  - Thanh ghi ARR là Tpwm = T
 
 ## 3. Thực hành điều khiển SG90
 
 ### [XEM VIDEO](https://www.youtube.com/watch?v=FeOoPGNq4to)
 
-- Áp dụng Timer, cấu hình làm sao cáu hình cho t = 1ms (Ttime = 64M,Tpwm = 20ms).
+- Áp dụng Timer, cấu hình làm sao cho t = 1ms (Ttime = 64M,Tpwm = 20ms).
 
   - t = Ttimer / PSC + 1
 
